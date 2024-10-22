@@ -10,3 +10,7 @@
 local map = LazyVim.safe_keymap_set
 
 map("i", "jk", "<esc>", { noremap = true, silent = true })
+
+-- Quick find current file in exploere NoTree
+map("n", "fd", "<cmd>Neotree focus<cr>")
+map("n", "<CMD-s>", "<cmd>w<cr>")
